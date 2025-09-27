@@ -6,7 +6,8 @@ config_files="network
 firewall
 youtubeUnblock
 https-dns-proxy
-dhcp"
+dhcp
+dns-failsafe-proxy"
 
 manage_package() {
     local name="$1"
