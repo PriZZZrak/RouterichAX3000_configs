@@ -402,7 +402,7 @@ else
 	if [ "$warpGen" = "Error" ]
 	then
 		printf "\033[32;1mRequest WARP config... Attempt #2\033[0m\n"
-		result=$(requestConfWARP2)
+		result=$(requestConfWARP1)
 		warpGen=$(check_request "$result" 2)
 		if [ "$warpGen" = "Error" ]
 		then
@@ -642,4 +642,4 @@ service sing-box restart
 service podkop enable
 service podkop restart
 
-printf  "\033[32;1mConfigured completed...\033[0m\n"
+printf  "\033[32;1mConfigured completed...\033[0m\n
